@@ -20,6 +20,10 @@ body {
   /* overflow-x: hidden; */
 }
 
+img {
+  max-width: 100%;
+}
+
 /* first nav start */
 .first-nav {
   background-color: #e0e0e0;
@@ -269,9 +273,10 @@ input[type="text"] {
   display: grid;
   grid-column-gap: 1.5em;
   padding: 30px 1.5em;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
   margin: 36px 0;
-  /* position: relative; */
+  position: relative;
 }
 
 .single-product img {
@@ -315,6 +320,87 @@ font-weight: bold;
     content: "";
   clear: right;
 }
+
+.flash .fa-bolt {
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.featured-categories {
+  grid-row-gap: 1.5em;
+  background: #ffffff;
+    border-radius: 5px;
+    display: grid;
+    grid-column-gap: 1.5em;
+    padding: 30px 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    margin: 36px 0;
+    position: relative;
+
+}
+
+.jj{
+  max-width: 100%;
+  max-height: 100%;
+  background: /* transparent blue overlay */ linear-gradient(
+      rgba(64, 69, 70, 0.45),
+      rgba(76, 81, 82, 0.45)
+    ),
+    /* inset your image below */ url("./image/13.svg") no-repeat;
+    /* background-position: center; */
+}
+
+.featured-categories .color-overlay1 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url("./image/9.svg") no-repeat;
+    max-height: 13rem;
+width: 100%;
+}
+
+.featured-categories .color-overlay2 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url('./image/20.svg') no-repeat;
+    min-height: 13rem;
+}
+
+.featured-categories .color-overlay3 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url('./image/15.svg') no-repeat;
+    min-height: 13rem;
+}
+
+.featured-categories .color-overlay4 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url('./image/16.svg') no-repeat;
+    min-height: 13rem;
+}
+
+.featured-categories .color-overlay5 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url('./image/17.svg') no-repeat;
+}
+
+.featured-categories .color-overlay6 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url('./image/18.svg') no-repeat;
+    min-height: 13rem;
+}
+
+.featured-categories .color-overlay7 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url('./image/13.svg') no-repeat;
+    min-height: 13rem;
+}
+
+.featured-categories .color-overlay8 {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url('./image/15.svg') no-repeat;
+    min-height: 13rem;
+}
+
 
 /*  */
 /* @media (min-width: 992px) .container,
