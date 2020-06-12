@@ -270,6 +270,7 @@ input[type="text"] {
   grid-column-gap: 1.5em;
   padding: 30px 1.5em;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: 48px;
 }
 
 .single-product {
