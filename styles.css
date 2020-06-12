@@ -9,7 +9,10 @@
 body {
   background: #e5e5e5;
   font-family: "Quattrocento Sans", sans-serif;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 /* first nav start */
@@ -71,8 +74,6 @@ button:active {
 
 .second-nav ul li {
   list-style: none;
-  padding: 0.45rem 0.6rem;
-  font-family: Avenir Next;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -125,32 +126,33 @@ input[type="text"] {
 
 /* side bar */
 
-main {
-  padding: 2.5rem 3rem 2.5rem 8.5rem;
-}
-
 .side-bar {
-  width: 240px;
-  height: 470px;
+  width: 240px !important;
+  height: 426x;
 }
 
 .side-bar .sidebarlinks {
   background: #fff;
 }
 
+.side-bar ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 0;
+}
+
 .side-bar ul li {
   list-style-type: none;
-  padding: 9px 35px;
+  padding: 3px 0px;
+  margin: 0px 35px;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .side-bar ul li a {
   text-decoration: none;
   color: #4f4f4f;
-}
-
-.side-bar ul {
-  padding-top: 9px;
 }
 
 .sidebar-heading {
@@ -163,7 +165,7 @@ main {
   color: #072208;
   background: #f3f3f3;
   border-radius: 5px 5px 0px 0px;
-  padding: 9px 35px;
+  padding: 5px 35px;
 }
 
 .sidebar-heading h2 {
@@ -176,14 +178,19 @@ main {
   font-weight: bold;
 }
 
+/* carousel */
+
 .carousel-item {
-    min-height: 428px;
-    height: 100%;
-    width: 100%;
+  position: relative;
+  height: 427px;
+  height: 100%;
+  width: 100%;
 }
 
-.carousel-indicators{
-    margin-right: -400px;
+.carousel-indicators {
+  position: absolute;
+  left: 550px;
+  top: 310px;
 }
 
 .carousel-indicators li {
@@ -193,54 +200,88 @@ main {
   background-color: #fff;
   color: #056608;
   font-size: 15px;
-  margin-top: -80px!important;
 }
 
 .one {
-    background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
-  url("./image/bg-fruits.svg");
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+    url("./image/bg-fruits.svg");
 }
 
 .two {
   background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
-url("./image/bg-legumes.svg");
+    url("./image/bg-legumes.svg");
 }
 
 .three {
   background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
-url("./image/bg-sands.svg");
+    url("./image/bg-sands.svg");
 }
 
 .btn-shop {
-    width: 200.67px;
-    background-color: #ffffff;
-    font-weight: bolder;
-    border: none;
-    padding: 6px;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    margin-top: -90px;
+  width: 200.67px;
+  background-color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  padding: 6px;
 }
 
 .carousel-item {
-    padding: 0 6rem;
+  padding: 1.5rem 6rem;
 }
 
 .carousel-item > h1 {
-  margin-top: 1.5rem;
+  font-size: 40px;
+  line-height: 55px;
 }
 
-.carousel-item > div > p {
+.carousel-item > div > h1 {
   font-weight: bold;
-  font-size: 4.3em;
-  line-height: 5.2rem;
-  margin-top: 1.5rem;
-  letter-spacing: 2px;
+  font-size: 3.75rem;
+  line-height: 5.13rem;
   color: #ffffff;
+}
+
+.carousel-item .text {
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 25px;
+  font-weight: bold;
 }
 
 .carousel-indicators .active {
   background-color: #056608;
 }
 
+.first-product {
+  width: 1180px;
+  height: 360px;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1150px !important;
+}
+
+/*  */
+/* @media (min-width: 992px) .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+  max-width: 960px;
+}
+
+@media (min-width: 768px) .container, .container-md, .container-sm {
+  max-width: 720px;
+}
+@media (min-width: 576px) .container, .container-sm {
+  max-width: 540px;
+}
+@media (min-width: 992px) .container {
+  max-width: 960px;
+}
+@media (min-width: 768px) .container {
+  max-width: 720px;
+}
+@media (min-width: 576px) .container {
+  max-width: 540px;
+} */
