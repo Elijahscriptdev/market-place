@@ -11,6 +11,7 @@
       rel="stylesheet">
     <script src="https://kit.fontawesome.com/3261fed244.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -56,25 +57,79 @@
     </header>
 
     <main>
-        <section class="side-bar">
-        <div class="sidebar-heading">
-                <img src="./image/hamburger.png" alt="hamburger">
-                <h2>Categories</h2>
-        </div>
-        <div class="sidebarlinks">
-            <ul>
-                <li><a href="#"><img class="m-1" src="./image/grains.png" alt="grains-image"> Grains</a></li>
-                <li><a href="#"><img class="m-1" src="./image/tubers.png" alt="tubers-image"> Tubers</a></li>
-                <li><a href="#"><img class="m-1" src="./image/vegetables.png" alt="vegetables-image"> Vegetables</a></li>
-                <li><a href="#"><img class="m-1" src="./image/fruits.png" alt="fruits-image"> Fresh Fruits</a></li>
-                <li><a href="#"><img class="m-1" src="./image/cashcrops.png" alt="cashcrops-image"> Cash Crops</a></li>
-                <li><a href="#"><img class="m-1" src="./image/nuts.png" alt="nuts-image"> Nuts & Oil</a></li>
-                <li><a href="#"><img class="m-1" src="./image/butchering.png" alt="butchering-image"> Butchering</a></li>
-                <li><a href="#"><img class="m-1" src="./image/materials.png" alt="materials-image"> Material Resources</a></li>
-            </ul>
-        </div>
+        <section class="first-section row">
+            <div class="side-bar col-3">
+                <div class="sidebar-heading">
+                        <img src="./image/hamburger.png" alt="hamburger">
+                        <h2>Categories</h2>
+                </div>
+                <div class="sidebarlinks">
+                    <ul>
+                        <li><a href="#"><img class="m-1" src="./image/grains.png" alt="grains-image"> Grains</a></li>
+                        <li><a href="#"><img class="m-1" src="./image/tubers.png" alt="tubers-image"> Tubers</a></li>
+                        <li><a href="#"><img class="m-1" src="./image/vegetables.png" alt="vegetables-image"> Vegetables</a></li>
+                        <li><a href="#"><img class="m-1" src="./image/fruits.png" alt="fruits-image"> Fresh Fruits</a></li>
+                        <li><a href="#"><img class="m-1" src="./image/cashcrops.png" alt="cashcrops-image"> Cash Crops</a></li>
+                        <li><a href="#"><img class="m-1" src="./image/nuts.png" alt="nuts-image"> Nuts & Oil</a></li>
+                        <li><a href="#"><img class="m-1" src="./image/butchering.png" alt="butchering-image"> Butchering</a></li>
+                        <li><a href="#"><img class="m-1" src="./image/materials.png" alt="materials-image"> Material Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+                <div id="carouselExampleIndicators" class="carousel slide col-9" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active one">
+                        <h1>Fresh Legumes</h1>
+                        <div>
+                            <p>Freshly Handpicked <br>Legumes</p>
+                        </div>
+                        <p class="text-light">Free pickup &amp; delivery</p>
+                        <button class="btn-shop">
+                            Shop now
+                        </button>
+                    <!-- <img src="https://res.cloudinary.com/elijjaaahhhh/image/upload/v1589667374/main_kgnuev.jpg" class="d-block w-100" alt="..."> -->
+                    </div>
+                    <div class="carousel-item two">
+                        <h1>Fresh Fruits</h1>
+                        <div>
+                            <p>Vegetable <br>100% Organic</p>
+                        </div>
+                        <p class="text-light">Free pickup &amp; delivery</p>
+                        <button class="btn-shop">
+                            Shop now
+                        </button>
+                        <!-- <img src="https://res.cloudinary.com/elijjaaahhhh/image/upload/v1589667374/main_kgnuev.jpg" class="d-block w-100" alt="..."> -->
+                    </div>
+                    <div class="carousel-item three">
+                         <h1>Sands &amp; Stone</h1>
+                        <div>
+                            <p>Ready and Available <br>for Construction</p>
+                        </div>
+                        <p class="text-light">Free pickup &amp; delivery</p>
+                        <button class="btn-shop">
+                            Shop now
+                        </button>
+                    <!-- <img src="https://res.cloudinary.com/elijjaaahhhh/image/upload/v1589667374/main_kgnuev.jpg" class="d-block w-100" alt="..."> -->
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
         </section>
-    </main>
+        
+</main>
     
     
     <!-- Optional JavaScript -->
@@ -82,6 +137,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    
 </body>
 </html>

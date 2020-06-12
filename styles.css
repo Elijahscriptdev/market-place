@@ -1,50 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #E5E5E5;
-    font-family: 'Quattrocento Sans', sans-serif;
+  background: #e5e5e5;
+  font-family: "Quattrocento Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 /* first nav start */
 .first-nav {
-    background-color: #E0E0E0;
-    color: #4f4f4f;
+  background-color: #e0e0e0;
+  color: #4f4f4f;
 }
-
 
 .first-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    float: right;
-    padding: 0 4.5rem; 
-    align-items: center;
-    margin-bottom: 0!important;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  float: right;
+  padding: 0 4.5rem;
+  align-items: center;
+  margin-bottom: 0 !important;
 }
 
-.first-nav ul li a{
-    text-decoration: none;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: #4f4f4f;
+.first-nav ul li a {
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #4f4f4f;
 }
 
-.first-nav ul li{
-    border-right: 1px solid rgb(14, 13, 13) ;
-    list-style: none;
-    padding: 0.45rem 0.6rem ;
-    font-family: Avenir Next;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 1rem;
+.first-nav ul li {
+  border-right: 1px solid rgb(14, 13, 13);
+  list-style: none;
+  padding: 0.45rem 0.6rem;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 button:focus,
@@ -53,12 +52,12 @@ button:hover,
 button:active {
   outline: 0px !important;
   border: none;
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 /* second nav start */
 .second-nav {
-    background: #fff;
+  background: #fff;
 }
 
 .second-nav ul {
@@ -70,7 +69,7 @@ button:active {
   align-items: center;
 }
 
- .second-nav ul li {
+.second-nav ul li {
   list-style: none;
   padding: 0.45rem 0.6rem;
   font-family: Avenir Next;
@@ -82,97 +81,166 @@ button:active {
 }
 
 .logo {
-    margin-right: 90px;
+  margin-right: 90px;
 }
 
 .second-nav ul li a {
   text-decoration: none;
   margin-left: 15px;
   margin-right: 15px;
-  color: #354C36;
+  color: #354c36;
 }
 
-.burger-menu{
-    display: none;
+.burger-menu {
+  display: none;
 }
 
 .fa-heart,
 .fa-shopping-cart {
-    margin-right: .9rem;
-    font-size: 1.3rem;
-    color: #072208;
+  margin-right: 0.9rem;
+  font-size: 1.3rem;
+  color: #072208;
 }
 
-.search-input{
-    padding: 10px;
-    height: 48px;
-    width: 150px;
-    font-size: .8rem;
+.search-input {
+  padding: 10px;
+  height: 48px;
+  width: 150px;
+  font-size: 0.8rem;
 }
 
 .search {
-    width: 50px;
-    font-size: 1rem;
-    background: #056608;
-    color: #fff;
+  width: 50px;
+  font-size: 1rem;
+  background: #056608;
+  color: #fff;
 }
 
-input[type=text] {
-    height: 50px;
-    font-size: .8rem;
-    padding: 10px 50px;
-    color: #fff;
+input[type="text"] {
+  height: 50px;
+  font-size: 0.8rem;
+  padding: 10px 50px;
+  color: #fff;
 }
 
 /* side bar */
 
 main {
-    padding: 2.5rem 3rem 2.5rem 8.5rem;
+  padding: 2.5rem 3rem 2.5rem 8.5rem;
 }
 
 .side-bar {
-    width: 240px;
-    height: 470px;
+  width: 240px;
+  height: 470px;
 }
 
 .side-bar .sidebarlinks {
-    background: #fff;
+  background: #fff;
 }
 
-.side-bar ul li{
-    list-style-type: none;
-    padding: 9px 35px;
-    text-decoration: none;
+.side-bar ul li {
+  list-style-type: none;
+  padding: 9px 35px;
+  text-decoration: none;
 }
 
-.side-bar ul li a{
-    text-decoration: none;
-    color: #4f4f4f;
+.side-bar ul li a {
+  text-decoration: none;
+  color: #4f4f4f;
 }
 
 .side-bar ul {
-    padding-top: 9px;
+  padding-top: 9px;
 }
 
 .sidebar-heading {
-    display: flex;
-    flex-direction: row;
-    font-weight: 700;
-    height: 50px;
-    font-size: 10px;
-    line-height: 22px;
-    color: #072208;
-    background: #F3F3F3;
-    border-radius: 5px 5px 0px 0px;
-    padding: 9px 35px;
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  height: 50px;
+  font-size: 10px;
+  line-height: 22px;
+  color: #072208;
+  background: #f3f3f3;
+  border-radius: 5px 5px 0px 0px;
+  padding: 9px 35px;
 }
 
 .sidebar-heading h2 {
-    text-align: center;
-    font-size: 20px;
-    line-height: 22px;
-    align-self: center;
-    margin: 0;
-    padding: 12px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  line-height: 22px;
+  align-self: center;
+  margin: 0;
+  padding: 12px;
+  font-weight: bold;
 }
+
+.carousel-item {
+    min-height: 428px;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators{
+    margin-right: -400px;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  color: #056608;
+  font-size: 15px;
+  margin-top: -80px!important;
+}
+
+.one {
+    background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+  url("./image/bg-fruits.svg");
+}
+
+.two {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+url("./image/bg-legumes.svg");
+}
+
+.three {
+  background: linear-gradient(rgba(19, 19, 19, 0.3), rgba(19, 19, 19, 0.1)),
+url("./image/bg-sands.svg");
+}
+
+.btn-shop {
+    width: 200.67px;
+    background-color: #ffffff;
+    font-weight: bolder;
+    border: none;
+    padding: 6px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    margin-top: -90px;
+}
+
+.carousel-item {
+    padding: 0 6rem;
+}
+
+.carousel-item > h1 {
+  margin-top: 1.5rem;
+}
+
+.carousel-item > div > p {
+  font-weight: bold;
+  font-size: 4.3em;
+  line-height: 5.2rem;
+  margin-top: 1.5rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.carousel-indicators .active {
+  background-color: #056608;
+}
+
