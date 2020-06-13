@@ -393,7 +393,7 @@ font-weight: bold;
     min-height: 13rem;
 }
 
-button:focus,
+/* button:focus,
 button:active,
 button:hover,
 button:active {
@@ -401,9 +401,17 @@ button:active {
   border: none;
   background: none;
   box-shadow: none !important;
-}
+} */
+.filter-btn:hover,
+.filter-btn:active,
+.filter-btn:focus {
+    outline: 0px !important;
+border: none;
+background: none;
+box-shadow: none !important;
 
-button {
+}
+.filter-btn {
     border: none;
     background: none;
     margin: 5px 15px 0px 15px;
@@ -417,6 +425,37 @@ hr {
     margin-top: -1.5px;
     margin-left: 10px;
 }
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #ffffff;
+    padding: 30px 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.services .service p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+
+.services .service small {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #072208;
+}
+
+.service {
+    padding: 5px 35px;
+}
+
+
 
 /*  */
 /* @media (min-width: 992px) .container,
