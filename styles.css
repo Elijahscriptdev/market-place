@@ -7,11 +7,6 @@
     display: none;
 }
 
-/* .third-nav {
-  visibility: hidden;
-} */
-
-
 * {
   margin: 0;
   padding: 0;
@@ -322,7 +317,6 @@ input[type="text"] {
   font-weight: bold;
 }
 
-
 .notice {
     margin: 10px;
 }
@@ -473,7 +467,6 @@ hr {
 
 .service {
     padding: 4px 2px;
-    /* border: 1px solid brown; */
 }
 
 .advert {
@@ -580,23 +573,7 @@ footer {
   color: #072208;
 }
 
-.third-nav {
-  /* display: inline; */
-  /* background: #ffffff; */
-}
-
-
 /* media queries */
-/* Smartphones (portrait and landscape) ---------- */
-/* @media screen and (min-width: 320px) and (max-width: 480px) {
-  .first-nav {
-  display: none;
-}
-} */
-/* Smartphones (portrait) ---------- */
-@media screen and (max-width: 320px) {
-  /* styles */
-}
 /* Smartphones (landscape) ---------- */
 @media screen and (min-width: 300px) and (max-width: 600px) {
   /* styles */
@@ -800,10 +777,81 @@ text-align: center;
 }
 
 
+.filter-btn {
+  border: none;
+  background: none;
+  margin: 0 4.5px;
+  font-size: 14px;
+}
+
+.first-button {
+  border-bottom: 3px solid #000;
+}
+
+hr {
+  margin-top: -1.5px;
+  margin-left: 10px;
+}
 
 footer {
-    display: none;
+  background: #fff;
+  margin-top: 48px;
+  padding-bottom: 1rem !important;
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  max-width: 1150px !important;
+  margin: 0px auto;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.footer-links {
+  padding: 0 20px;
+}
+
+.footer-links p,
+.footer-links h6 {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-links p a {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-links h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.footer-links h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.footer-end {
+  max-width: 1150px !important;
+  margin: 0 auto;
+}
+
+.footer-end p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #072208;
+}
+
 
 }
 
