@@ -131,6 +131,9 @@ input[type="text"] {
     max-width: 1150px !important;
 }
 
+.first-section {
+    margin-top: 32px;
+}
 /* side bar */
 
 .side-bar {
@@ -454,6 +457,52 @@ hr {
 .service {
     padding: 5px 35px;
 }
+
+.advert {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    margin: 48px 0;
+}
+
+.summer-fruits {
+    padding: 30px;
+    background: url("./image/advert1.svg");
+}
+
+.grains {
+  padding: 30px;
+  background: url("./image/advert2.svg");
+}
+
+.content {
+    float: right;
+}
+
+.content h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #072208;
+}
+
+.content p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #072208;
+}
+
+.btn-shop2 {
+  width: 200.67px;
+  background-color: #000;
+  font-weight: bolder;
+  border: none;
+  padding: 6px;
+  color: #fff;
+}
+
+
 
 
 
