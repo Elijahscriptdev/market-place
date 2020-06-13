@@ -275,28 +275,30 @@ input[type="text"] {
 }
 
 .single-product img {
-    background: linear-gradient(
-        270deg,
-        rgba(79, 79, 79, 0.2) 0%,
-        rgba(79, 79, 79, 0) 100%
-        );
-        width: 100%;
-        border-radius: 5px;
-    }
-    
-    .single-product p,
-    .single-product .product-price {
-        font-weight: bold;
-        margin-bottom: 8px;
-    }
+  background: linear-gradient(
+    270deg,
+    rgba(79, 79, 79, 0.2) 0%,
+    rgba(79, 79, 79, 0) 100%
+  );
+  width: 100%;
+  border-radius: 5px;
+}
+
+.single-product p,
+.single-product .product-price {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
     
     .single-product .price-off {
-        position: absolute;
-        margin-top: -260px;
-        margin-left: 180px;
-color: #000;
-font-weight: bold;
+  position: absolute;
+  margin-top: -260px;
+  margin-left: 180px;
+  color: #000;
+  font-weight: bold;
 }
+
 
 .notice {
     margin: 10px;
@@ -335,17 +337,6 @@ font-weight: bold;
   margin: 36px 0;
   position: relative;
   
-}
-
-.jj{
-    max-width: 100%;
-    max-height: 100%;
-    background: /* transparent blue overlay */ linear-gradient(
-        rgba(64, 69, 70, 0.45),
-        rgba(76, 81, 82, 0.45)
-        ),
-    /* inset your image below */ url("./image/13.svg") no-repeat;
-    /* background-position: center; */
 }
 
 .featured-categories .color-overlay1 {
@@ -502,7 +493,67 @@ hr {
   color: #fff;
 }
 
+footer {
+    background: #fff;
+    margin-top: 48px;
+    padding-bottom: 1rem!important;
+}
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1150px !important;
+    margin: 0px auto;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.footer-links {
+    padding: 0 20px;
+}
+
+.footer-links p,
+.footer-links h6 {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-links p a{
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+
+.footer-links h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.footer-links h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.footer-end {
+    max-width: 1150px !important;
+    margin: 0 auto;
+}
+
+.footer-end p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #072208;
+}
+
+/* media queries */
 
 
 
