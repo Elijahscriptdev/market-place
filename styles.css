@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 
-.third-nav {
+.mobile {
     display: none;
 }
 
@@ -602,11 +602,15 @@ footer {
   display: none;
 }
 
+.mobile{
+    display: block;
+    background: #ffffff;
+}
+
 .third-nav {
   display: block;
   background: #ffffff;
   max-width: 100%;
-  /* padding: 0.5rem 4rem 1rem; */
 }
 
 .third-nav a {
@@ -615,9 +619,7 @@ footer {
 }
 
 .third-nav img {
-    /* height: 70px!important; */
     width: 25%!important;
-    /* padding: 0 10px; */
 }
 
 .cart,
@@ -642,6 +644,19 @@ footer {
   font-size: 1rem;
   display: none;
 }
+
+.search-mobile {
+    padding: 0 50px;
+    /* height: 30px; */
+}
+
+input[type='text'] {
+  height: 35px;
+  font-size: 0.8rem;
+  padding: 10px 50px;
+  color: #fff;
+}
+
 
 
   .second-nav ul {
