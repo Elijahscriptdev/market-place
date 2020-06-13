@@ -671,6 +671,47 @@ input[type='text'] {
   .side-bar{
       display: none;
   }
+
+  .carousel-item {
+  position: relative;
+  height: 300px!important;
+  /* height: 100%; */
+  width: 100%;
+  padding: 1.5rem 2rem;
+}
+
+.btn-shop {
+  width: 100.67px;
+  background-color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  padding: 3px;
+}
+/* 
+.carousel-item {
+  padding: 1.5rem 6rem;
+} */
+
+.carousel-item > h1 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.carousel-item > div > h1 {
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.13rem;
+  color: #ffffff;
+}
+
+.carousel-item .text {
+  color: #000;
+  font-size: .6rem;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+
   .first-product {
   background: #ffffff;
   border-radius: 5px;
@@ -689,26 +730,28 @@ input[type='text'] {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #ffffff;
-  padding: 15px 25px;
+  padding: 5px 5px;
   align-items: center;
   text-align: center;
 }
 
 .advert {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 10px;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
   margin: 48px 0;
+  align-items: center;
+text-align: center;
+
 }
 
 .summer-fruits {
   padding-top: 15px;
-  background: url('./image/advert1.svg');
 }
 
 .grains {
   padding-top: 15px;
-  background: url('./image/advert2.svg');
 }
 
 .content {
@@ -738,6 +781,9 @@ input[type='text'] {
   color: #fff;
 }
 
+footer {
+    display: none;
+}
 
 }
 
