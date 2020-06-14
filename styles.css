@@ -688,7 +688,8 @@ footer {
   }
 
   .third-nav img {
-    width: 25% !important;
+    width: 20% !important;
+    margin-left: 25px;
   }
 
   .cart,
@@ -881,7 +882,9 @@ footer {
 
   .footer {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-direction: column;
+    text-align: center;
     max-width: 1150px !important;
     margin: 0px auto;
     justify-content: center;
@@ -899,14 +902,14 @@ footer {
   .footer-links p,
   .footer-links h6 {
     font-size: 5px;
-    line-height: 14px;
+    line-height: 6px;
     color: #000000;
     text-decoration: none;
   }
 
   .footer-links p a {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 9px;
     color: #000000;
     text-decoration: none;
   }
@@ -934,6 +937,7 @@ footer {
     font-size: 8px;
     line-height: 8px;
     color: #072208;
+    text-align: center;
   }
 
   .menu-toggle {
