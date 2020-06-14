@@ -109,9 +109,9 @@ img {
   color: #354c36;
 }
 
-/* .fa-bars {
+.fa-bars {
   display: none;
-} */
+}
 
 .fa-heart,
 .fa-shopping-cart {
@@ -564,6 +564,103 @@ footer {
   color: #072208;
 }
 
+/* navtoggle */
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent); */
+}
+
+.nav {
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle {
+  /* color: #fff; */
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  /* right: 2.5rem; */
+  left: 1rem;
+  cursor: pointer;
+  z-index: 1500;
+}
+
+.fa-times {
+  display: none;
+}
+
+.nav-list {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  padding: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-around;
+  z-index: 1250;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+}
+
+.nav-list a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-list a:hover,
+.nav-list a img:hover {
+  color: orange;
+}
+
+.open .fa-times {
+  display: block;
+}
+
+.open .fa-bars {
+  display: none;
+}
+
+.open .nav-list {
+  transform: translateX(0);
+}
+
+.open .nav::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav-item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+
 /* media queries */
 /* Smartphones (landscape) ---------- */
 @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -838,6 +935,19 @@ footer {
     line-height: 8px;
     color: #072208;
   }
+
+  .menu-toggle {
+  /* color: #fff; */
+  font-size: 1.5rem;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  /* right: 2.5rem; */
+  left: 1.5rem;
+  cursor: pointer;
+  z-index: 1500;
+}
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 988px) {
@@ -852,6 +962,19 @@ footer {
   .fa-bars {
     display: inline;
   }
+
+  .menu-toggle{
+  /* color: #fff; */
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* right: 2.5rem; */
+  left: 2.5rem;
+  cursor: pointer;
+  z-index: 1500;
+}
+
 }
 /* Tablets, iPads (portrait and landscape) ---------- */
 @media screen and (min-width: 600px) and (max-width: 1159px) {
@@ -963,100 +1086,3 @@ footer {
 @media screen and (min-width: 1824px) {
   
 }*/
-
-
-
-.header{
-  width:100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  /* background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent); */
-}
-
-.nav{
-  height: 7.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-toggle{
-  /* color: #fff; */
-  font-size: 2.2rem;
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  /* right: 2.5rem; */
-  left: 1rem;
-  cursor: pointer;
-  z-index: 1500;
-}
-
-.fa-times {
-  display: none;
-}
-
-.nav-list {
-  list-style: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: 100vh;
-  background-color: #e5e5e5;
-  padding: 4.4rem;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: space-around;
-  z-index: 1250;
-  transform: translateY(-100%);
-  transition: transform .5s;
-}
-
-.nav-list a{
-  list-style: none;
-  text-decoration: none;
-  color: #000;
-}
-
-.nav-list a:hover,
-.nav-list a img:hover {
-  color: orange;
-}
-
-
-.open .fa-times{
-  display: block;
-}
-
-.open .fa-bars{
-  display: none;
-}
-
-.open .nav-list{
-  transform: translateX(0);
-}
-
-.open .nav::before{
-  opacity: 1;
-  transform: scale(1);
-}
-
-.nav-item {
-  border-bottom: 2px solid rgba(255,255,255,.3);
-}
-
-.nav-link {
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  transition: color .5s;
-}
-
-.nav-link:hover{
-  color: orange;
-}
