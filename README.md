@@ -1,5 +1,4 @@
-"# market-place" 
-# Project: market-place homepage 
+# Market Place Website Homepage 
 
 This is the homepage of market place e-commerce website built.
 
