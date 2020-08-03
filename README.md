@@ -8,8 +8,12 @@ This is the homepage of market place e-commerce website built.
 - JAVASCRIPT
 - BOOTSTRAP
 
-## Homepage
+## Web Homepage
 ![](https://res.cloudinary.com/elijjaaahhhh/image/upload/v1595191566/FireShot_Capture_155_-_ZCPI_Market_Place_-_zcpi-marketplace-page.netlify.app_alak9f.png)
+
+
+## Mobile Homepage
+![](https://res.cloudinary.com/elijjaaahhhh/image/upload/v1596469650/FireShot_Capture_029_-_ZCPI_Market_Place_-_zcpi-marketplace-page.netlify.app_jh7wwg.png)
 
 ## Deployment to netlify
 [Live link](https://zcpi-marketplace-page.netlify.app)
